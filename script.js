@@ -1,4 +1,3 @@
-// Your code here.
 const itemsContainer = document.getElementById("itemsContainer");
 
 let isMouseDown = false;
@@ -10,7 +9,6 @@ itemsContainer.addEventListener("mousedown", (e) => {
   scrollLeft = itemsContainer.scrollLeft;
 });
 
-
 itemsContainer.addEventListener("mouseleave", () => {
   isMouseDown = false;
 });
@@ -18,7 +16,6 @@ itemsContainer.addEventListener("mouseleave", () => {
 itemsContainer.addEventListener("mouseup", () => {
   isMouseDown = false;
 });
-
 
 itemsContainer.addEventListener("mousemove", (e) => {
   if (!isMouseDown) return;
